@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Spectre OÜ — Äri- ja turunduskonsultatsioon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --blue: #4da3ff;
+            --black: #0a0a0a;
+            --white: #f5f5f5;
+            --gray: #b5b5b5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--black);
+            color: var(--white);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        section {
+            padding: 100px 8%;
+        }
+
+        .section-label {
+            color: var(--blue);
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(120deg, #050505, #0e1b2d);
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            font-size: 18px;
+            color: var(--gray);
+        }
+
+        /* ABOUT */
+        .about {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about img {
+            width: 100%;
+            filter: contrast(1.2) grayscale(0.3);
+            border: 2px solid var(--blue);
+        }
+
+        /* SERVICES */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .card {
+            border: 1px solid #1f1f1f;
+            padding: 40px;
+            background: #0f0f0f;
+        }
+
+        .card h3 {
+            color: var(--blue);
+            margin-bottom: 15px;
+        }
+
+        /* ADVANTAGES */
+        .advantages {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        /* PROCESS */
+        .process {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .step span {
+            color: var(--blue);
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        /* CONTACT */
+        .contact {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            background: linear-gradient(180deg, #0a0a0a, #08192f);
+            align-items: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input, textarea {
+            background: transparent;
+            border: 1px solid var(--blue);
+            padding: 15px;
+            color: var(--white);
+        }
+
+        button {
+            background: var(--blue);
+            color: var(--black);
+            border: none;
+            padding: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 40px 8%;
+            border-top: 1px solid #1f1f1f;
+            font-size: 14px;
+            color: var(--gray);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 900px) {
+            .about, .cards, .advantages, .process, .contact {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 44px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <div class="section-label">Strateegiline konsultatsioon</div>
+        <h1>Spectre OÜ</h1>
+        <p>
+            Aitame ettevõtetel kasvada selge strateegia, mõõdetavate eesmärkide ja
+            andmetel põhinevate otsuste kaudu. Töötame organisatsioonidega, kes
+            vajavad struktuuri, fookust ja realistlikku kasvuplaani, mitte oletusi.
+        </p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+    <div class="section-label">Kes me tegelikult oleme</div>
+    <div class="about">
+        <div>
+            <p>
+                Spectre OÜ on äri- ja turunduskonsultatsiooni ettevõte, mis keskendub
+                strateegilisele selgusele ja praktilistele tulemustele.
+                Me ei paku valmis lahendusi — alustame alati analüüsist.
+            </p>
+            <p>
+                Ühendame ärianalüüsi, turundusstrateegia, andmetöötluse ning brändi
+                positsioneerimise ühtseks süsteemiks. Teeme koostööd juhtide ja
+                meeskondadega, et muuta keerulised eesmärgid teostatavaks tegevusplaaniks.
+            </p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG9mZmljZSUyMHRlYW18ZW58MHx8MHx8fDA%3D" alt="Spectre meeskond">
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section>
+    <div class="section-label">Meie teenused</div>
+    <div class="cards">
+        <div class="card">
+            <h3>Äri- ja turundusnõustamine</h3>
+            <p>
+                Analüüsime ärimudelit, müügistruktuuri ja kliendi omandamise kanaleid.
+                Tuvastame kasvutakistused ja optimeerimisvõimalused.
+                Töötame välja realistliku ja mõõdetava strateegia.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Andme- ja tulemusanalüüs</h3>
+            <p>
+                Muudame andmed juhtimisotsuste aluseks.
+                Jälgime KPI-sid, turundusfunneli ja tulemuslikkust.
+                Aitame langetada otsuseid faktide, mitte tunnetuse põhjal.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Bränding ja strateegiline disain</h3>
+            <p>
+                Loome brände, mis peegeldavad ettevõtte tegelikku positsiooni turul.
+                Töötame läbi sõnumi, identiteedi ja visuaalse suuna.
+                Disain toetab alati strateegiat, mitte vastupidi.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section>
+    <div class="section-label">Miks valida Spectre</div>
+    <div class="advantages">
+        <div>
+            <h3>Kriitiline mõtlemine</h3>
+            <p>
+                Seame kahtluse alla olemasolevad eeldused ja protsessid.
+                Meie väärtus peitub analüüsis, mitte kinnituses.
+            </p>
+        </div>
+        <div>
+            <h3>Tulemusele orienteeritud</h3>
+            <p>
+                Iga projekt on seotud konkreetsete mõõdikutega.
+                Keskendume kasvule, efektiivsusele ja selgusele.
+            </p>
+        </div>
+        <div>
+            <h3>Terviklik vaade</h3>
+            <p>
+                Äri, turundus, andmed ja bränd toimivad koos.
+                Väldime killustatud lahendusi, mis ei skaleeru.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section>
+    <div class="section-label">Kuidas me töötame</div>
+    <div class="process">
+        <div class="step">
+            <span>01</span>
+            <h3>Analüüs</h3>
+            <p>
+                Uurime ettevõtet, turgu ja olemasolevaid andmeid.
+                Mõistame olukorda enne tegutsemist.
+            </p>
+        </div>
+        <div class="step">
+            <span>02</span>
+            <h3>Strateegia</h3>
+            <p>
+                Määratleme selge suuna ja prioriteedid.
+                Loome tegevusplaani ja mõõdikud.
+            </p>
+        </div>
+        <div class="step">
+            <span>03</span>
+            <h3>Rakendamine</h3>
+            <p>
+                Toetame elluviimist ja jälgime tulemusi.
+                Strateegiast saab toimiv süsteem.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <div>
+        <div class="section-label">Võta ühendust</div>
+        <h2>Räägime sinu ettevõttest</h2>
+        <p>
+            Kui otsid strateegilist partnerit, mitte lihtsalt teenusepakkujat,
+            võta meiega ühendust. Iga koostöö algab ausast vestlusest
+            eesmärkide ja väljakutsete üle.
+        </p>
+        <p>
+            📧 office@spectre-ou.team<br>
+            📍 Jaama tn 21, Põltsamaa, Jõgevamaa, 48103
+        </p>
+    </div>
+
+    <form>
+        <input type="text" placeholder="Sinu nimi">
+        <input type="email" placeholder="E-post">
+        <textarea rows="5" placeholder="Kirjelda lühidalt oma projekti"></textarea>
+        <button>Saada päring</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div>© Spectre OÜ — Strateegiline konsultatsioon</div>
+    <div>Äri • Turundus • Andmed • Bränding</div>
+</footer>
+
+</body>
+</html>
